@@ -1,0 +1,127 @@
+.note-title{
+    display: flex;
+    flex-direction: column;
+}
+input{
+    border: 1px solid #D4D4D4;
+}
+#content-container{
+    justify-content: center;
+}
+.note-wrapper{
+    width: 100%;
+    padding: 20px;
+    border: 2px solid #E6EAF6;
+}
+.note-tool{
+    width: 100%;
+    display: inline-block;
+    border-bottom: 1px solid #D4D4D4;
+}
+.note-tool > div{
+    margin: 10px 5px;
+}
+.note-tool i{
+    font-size: 22px;
+}
+.note-tool > .back{
+    float: left;
+    cursor: pointer;
+}
+.note-tool > .remove{
+    float: right;
+}
+.note-title{
+    margin: 20px 0px;
+}
+.note-title > label{
+    margin-bottom: 10px;
+}
+.note-cont > label{
+    margin: 20px 0px;
+}
+.input-wrap{
+    padding: 10px;
+    border: 1.5px solid #D4D4D4;
+}
+#count{
+    margin-bottom: 10px;
+    display: none;
+}
+.note-cont{
+    width: 100%;
+}
+#text-editor{
+    min-height: 300px;
+}
+.ql-toolbar{
+    border: 1px solid #D4D4D4 !important;
+}
+#text-editor{
+    border-bottom: 1px solid #D4D4D4 !important;
+    border-left: 1px solid #D4D4D4 !important;
+    border-right: 1px solid #D4D4D4 !important;
+}
+.big-btn{
+    border-radius: 0px !important;
+    border: 1px solid black;
+    color: white !important;
+    margin-top: 20px;
+}
+.save-btn{
+    border: 0px !important;
+    color: white;
+    margin-top: 20px;
+    padding: 10px 20px;
+    border-radius: 3px;
+    display: flex;
+    margin: 0 auto;
+}
+form{
+    margin-bottom: 0px;
+}
+.ql-editor{
+    min-height: 300px;
+}
+#right-side{
+    float: left;
+    max-width: 78%;
+    padding: 3%;
+}
+#left-side{
+    float: left;
+}
+.allert{
+    text-align: center;
+    margin: 10px 0px;
+}
+.allert > .red{
+    color: red;
+}
+.allert > .green{
+    color: green;
+}
+.ql-container{
+    font-size: 16px;
+}
+.ql-editor ul[data-checked="true"] li {
+    text-decoration: line-through !important;
+}
+@media (max-width: 774px) {
+    h2{
+        font-size: 32px;
+    }
+    #right-side{
+        margin: 0 auto;
+        max-width: 100%;
+    }
+    .ql-formats  svg{
+        width: 15px;
+        height: 15px;
+    }
+}
+@media (min-width: 1200px) {
+    #right-side {
+        float: left;
+    }
+}
