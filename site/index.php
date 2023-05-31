@@ -57,7 +57,7 @@
         <div class="col-lg-7 mx-auto text-center text-white">
           <div class="row">
             <h1 class="display-4">Сохраняй свои заметки на надежном, бесплатном сайте</h1>
-            <p class="my-4"> Здесь вы можете создавать задачи, писать различные записи, рисовать что-нибудь, вставлять различные картинки.</p>
+            <p class="my-4"> Здесь вы можете создавать задачи, писать различные записи, вставлять различные картинки.</p>
             <?php
               if(isset($_SESSION["usersname"])){
                 echo "<a id='get-started' class='btn btn-primary' href='main.php' target='_blank'>Начать запись</a>";
