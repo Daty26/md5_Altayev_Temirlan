@@ -38,7 +38,7 @@
                                     </div>
                                     <div class="remove">
                                         <?php
-                                            if (isset($_GET['noteid'])) {
+                                            if(isset($_GET['noteid'])){
                                         ?>
                                         <a href="remove-note.php?noteid=<?php echo $_GET['noteid'];?>">
                                             <i class='bx bxs-trash'></i>
@@ -50,7 +50,7 @@
                                     <label for="title">Заголовок</label>
                                     <div class="input-wrap" id="divTitle" contenteditable="true" >
                                         <?php
-                                            if (!empty($row)) {
+                                            if(!empty($row)){
                                                 echo $row['title'];
                                             }
                                         ?>
@@ -63,7 +63,7 @@
                                     </div>
                                     <div id="text-editor" >
                                         <?php
-                                            if (!empty($row)) {
+                                            if(!empty($row)){
                                                 echo $row['content'];
                                             }
                                         ?>
