@@ -109,7 +109,7 @@ function loginUser($conn, $name, $pass){
         exit();
     }
 }
-function emptyContent($title, $content) {
+function emptyContent($title, $content){
     return (empty($title) && empty($content));
 }
 function escapeStr($string){

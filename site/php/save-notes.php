@@ -1,9 +1,9 @@
 <?php
-    if (!isset($_SESSION)) {
+    if(!isset($_SESSION)){
         session_start();
     }
     require 'inc/db.inc.php';
-    if (isset($_GET['noteid'])) {
+    if(isset($_GET['noteid'])){
         $id = $_GET['noteid'];
         $sql = "SELECT * FROM notes WHERE id = '$id'";
         $result = mysqli_query($conn, $sql);

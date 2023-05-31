@@ -67,8 +67,8 @@ if(!$user_id){
                                 require "php/inc/db.inc.php";
                                 $sql = "SELECT *, DATE_FORMAT(updated_at, '%M %d, %Y') AS formatted_updated_at FROM notes WHERE user_id = '$user_id' ORDER BY updated_at DESC";
                                 $result = mysqli_query($conn, $sql);
-                                if ($result->num_rows > 0) {
-                                    while ($row = mysqli_fetch_assoc($result)) {
+                                if(mysqli_num_rows($result) > 0){
+                                    while($row = mysqli_fetch_assoc($result)){
                                         echo '
                                             <div class="notes" style="background-color:'.$row['color'].';">
                                                 <div class="notes-txt">
